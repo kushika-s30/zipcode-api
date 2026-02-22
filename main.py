@@ -39,13 +39,13 @@ async def check_zip(zip_code: str):
             return {
                 "eligible": True,
                 "status": "success",
-                "message": f"Yes, zip code {zip_code} is within our New York service area."
+                "message": f"Yes, zip code {zip_code} is within our service area."
             }
         else:
             return {
                 "eligible": False,
                 "status": "outside_area",
-                "message": f"I'm sorry, zip code {zip_code} is outside of our New York service area."
+                "message": f"I'm sorry, zip code {zip_code} is outside of our service area."
             }
     
     # Final fallback if no results are returned
