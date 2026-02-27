@@ -33,7 +33,7 @@ async def check_zip(zip_code: str):
         formatted_address = results[0].get("formatted_address", "")
         
         # Logic to determine if location is in NYC
-        is_nyc = "New York" in city or "New York" in formatted_address
+        is_nyc = "NY" in state
         
         if is_nyc:
             return {
